@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import Architecture from "./pages/Architecture";
 import About from "./pages/About";
+import WonderDetail from "./pages/WonderDetail";
 
 export default function App(){
   return(
@@ -13,6 +14,7 @@ export default function App(){
         <Nav />
         <Routes>
           <Route  path="/" element={ <Home />} />
+          <Route path="/wonders/:slug" element={<WonderDetail />} />
           <Route path="/architecture" element={<Architecture />} />
           <Route  path="/about" element={ <About />} />
         </Routes>
